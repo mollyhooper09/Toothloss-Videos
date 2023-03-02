@@ -129,8 +129,7 @@ body {
   justify-content: center;
 }
 
-/* Very light scaling for our illustration */
-.title {
+/* Very light scaling for our illustration */.title {
   color: #2800FF;
   font-family: HK Grotesk;
   font-style: normal;
