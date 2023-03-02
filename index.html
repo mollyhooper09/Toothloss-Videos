@@ -6,7 +6,121 @@
     <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
   </head>
   <body>
+    <audio id="grinding">
+      <source src="grinding.mp3" type="audio/ogg" />
+      <source src="grinding.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
 
-   
+    <audio id="romance">
+      <source src="romance.mp3" type="audio/ogg" />
+      <source src="romance.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <audio id="dentist extraction">
+      <source src="dentist extraction.mp3" type="audio/ogg" />
+      <source src="dentist extraction.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <audio id="sporting injury">
+      <source src="sporting injury.mp3" type="audio/ogg" />
+      <source src="sporting injury.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <audio id="rotting">
+      <source src="rotting.mp3" type="audio/ogg" />
+      <source src="rotting.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <button id="tooth1" onclick="playPause()" type="button">
+      <img id="decay-1" src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/decay-1.png?v=1677751582382" width="100" height="100" />
+    </button>
+
+    <button id="tooth2" onclick="playPause2()" type="button">
+      <img id="decay-2" src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/decay-2.png?v=1677751583576" width="100" height="100" />
+    </button>
+
+    <button id="tooth3" onclick="playPause3()" type="button">
+      <img id="decay-3" src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/decay-3.png?v=1677751584612" width="100" height="100" />
+    </button>
+
+    <button id="tooth4" onclick="playPause4()" type="button">
+      <img id="decay-4" src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/decay-4.png?v=1677751585530" width="100" height="100" />
+    </button>
+
+    <button id="tooth5" onclick="playPause5()" type="button">
+      <img id="decay-5" src="decay-5.png" width="100" height="100" />
+    </button>
+
+    <script>
+      function playPause() {
+        var audio = document.getElementById("grinding");
+        if (audio.paused) {
+          audio.play();
+          $(".pause-btn").show();
+          $(".play-btn").hide();
+        } else {
+          audio.pause();
+          $(".play-btn").show();
+          $(".pause-btn").hide();
+        }
+      }
+
+      function playPause2() {
+        var audio = document.getElementById("romance");
+        if (audio.paused) {
+          audio.play();
+          $(".pause-btn").show();
+          $(".play-btn").hide();
+        } else {
+          audio.pause();
+          $(".play-btn").show();
+          $(".pause-btn").hide();
+        }
+      }
+
+      function playPause3() {
+        var audio = document.getElementById("dentist extraction");
+        if (audio.paused) {
+          audio.play();
+          $(".pause-btn").show();
+          $(".play-btn").hide();
+        } else {
+          audio.pause();
+          $(".play-btn").show();
+          $(".pause-btn").hide();
+        }
+      }
+
+      function playPause4() {
+        var audio = document.getElementById("sporting injury");
+        if (audio.paused) {
+          audio.play();
+          $(".pause-btn").show();
+          $(".play-btn").hide();
+        } else {
+          audio.pause();
+          $(".play-btn").show();
+          $(".pause-btn").hide();
+        }
+      }
+
+      function playPause5() {
+        var audio = document.getElementById("rotting");
+        if (audio.paused) {
+          audio.play();
+          $(".pause-btn").show();
+          $(".play-btn").hide();
+        } else {
+          audio.pause();
+          $(".play-btn").show();
+          $(".pause-btn").hide();
+        }
+      }
+    </script>
   </body>
 </html>
