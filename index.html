@@ -7,36 +7,35 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <video id="grinding">
+  <video id="grinding" width="320" height="240">
   <source src="https://cdn.glitch.me/438d7870-48c1-44b9-aff7-0643130b18eb/chapter1.mp4?v=1678020015757" type="audio/ogg">
   <source src="https://cdn.glitch.me/438d7870-48c1-44b9-aff7-0643130b18eb/chapter1.mp4?v=1678020015757" type="audio/mpeg">
   Your browser does not support the audio element.
   </video>
-
-<audio id="romance">
-  <source src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/romance.mp3?v=1677751602310" type="audio/ogg">
-  <source src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/romance.mp3?v=1677751602310" type="audio/mpeg">
+  
+  <video id="romance" width="320" height="240">
+  <source src="https://cdn.glitch.me/438d7870-48c1-44b9-aff7-0643130b18eb/chapter2.mp4?v=1678020410756" type="audio/ogg">
+  <source src="https://cdn.glitch.me/438d7870-48c1-44b9-aff7-0643130b18eb/chapter2.mp4?v=1678020410756" type="audio/mpeg">
   Your browser does not support the audio element.
-  </audio>
-
-<audio id="dentist extraction">
-  <source src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/dentist%20extraction.mp3?v=1677751599555" type="audio/ogg">
-  <source src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/dentist%20extraction.mp3?v=1677751599555" type="audio/mpeg">
+  </video>
+  
+  <video id="dentistExtraction" width="320" height="240">
+  <source src="https://cdn.glitch.me/438d7870-48c1-44b9-aff7-0643130b18eb/chapter%203.mp4?v=1678019993387" type="audio/ogg">
+  <source src="https://cdn.glitch.me/438d7870-48c1-44b9-aff7-0643130b18eb/chapter%203.mp4?v=1678019993387" type="audio/mpeg">
   Your browser does not support the audio element.
-  </audio>
-
-<audio id="sporting injury">
-  <source src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/sportinginjuryEdit.mp3?v=1677762735479" type="audio/ogg">
-  <source src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/sportinginjuryEdit.mp3?v=1677762735479" type="audio/mpeg">
+  </video>
+  
+  <video id="sportingInjury" width="320" height="240">
+  <source src="https://cdn.glitch.me/438d7870-48c1-44b9-aff7-0643130b18eb/chapter4.mp4?v=1678020597847" type="audio/ogg">
+  <source src="https://cdn.glitch.me/438d7870-48c1-44b9-aff7-0643130b18eb/chapter4.mp4?v=1678020597847" type="audio/mpeg">
   Your browser does not support the audio element.
-  </audio>
+  </video>
 
-<audio id="rotting">
-  <source src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/rotting.mp3?v=1677751602858" type="audio/ogg">
-  <source src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/rotting.mp3?v=1677751602858" type="audio/mpeg">
+  <video id="rotting" width="320" height="240">
+  <source src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/chapter%205.mp4?v=1678019999866" type="audio/ogg">
+  <source src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/chapter%205.mp4?v=1678019999866" type="audio/mpeg">
   Your browser does not support the audio element.
-  </audio>
-
+  </video>
 
 <div class="container">
 
@@ -55,65 +54,65 @@
 
 <script>
     function playPause() {
-    var audio = document.getElementById('grinding');
-    if (audio.paused) {
-        audio.play(); 
+    var video = document.getElementById('grinding');
+    if (video.paused) {
+        video.play(); 
         $('.pause-btn').show();
         $('.play-btn').hide();
     } else {
-        audio.pause(); 
+        video.pause(); 
         $('.play-btn').show();
         $('.pause-btn').hide();
     }
 }
 
     function playPause2() {
-    var audio = document.getElementById('romance');
-    if (audio.paused) {
-        audio.play(); 
+    var video = document.getElementById('romance');
+    if (video.paused) {
+        video.play(); 
         $('.pause-btn').show();
         $('.play-btn').hide();
     } else {
-        audio.pause(); 
+        video.pause(); 
         $('.play-btn').show();
         $('.pause-btn').hide();
     }
 }
 
    function playPause3() {
-    var audio = document.getElementById('dentist extraction');
-    if (audio.paused) {
-        audio.play(); 
+    var video = document.getElementById('dentistExtraction');
+    if (video.paused) {
+        video.play(); 
         $('.pause-btn').show();
         $('.play-btn').hide();
     } else {
-        audio.pause(); 
+        video.pause(); 
         $('.play-btn').show();
         $('.pause-btn').hide();
     }
 }
    
    function playPause4() {
-    var audio = document.getElementById('sporting injury');
-    if (audio.paused) {
-        audio.play(); 
+    var video = document.getElementById('sportingInjury');
+    if (video.paused) {
+        video.play(); 
         $('.pause-btn').show();
         $('.play-btn').hide();
     } else {
-        audio.pause(); 
+        video.pause(); 
         $('.play-btn').show();
         $('.pause-btn').hide();
     }
 }
    
    function playPause5() {
-    var audio = document.getElementById('rotting');
-    if (audio.paused) {
-        audio.play(); 
+    var video = document.getElementById('rotting');
+    if (video.paused) {
+        video.play(); 
         $('.pause-btn').show();
         $('.play-btn').hide();
     } else {
-        audio.pause(); 
+        video.pause(); 
         $('.play-btn').show();
         $('.pause-btn').hide();
     }
