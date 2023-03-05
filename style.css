@@ -60,4 +60,6 @@
   margin:auto;
 }
 
-a-videosphere
+a-sky{
+  z-index:-10;
+}

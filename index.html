@@ -8,24 +8,13 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
   <a-scene>
-  <a-assets>
-    <img id="mouth"  src="https://cdn.glitch.global/d0f1d937-ebc2-4489-aefc-44b41a6a00aa/editedmouthbw.jpg?v=1677849137209">
-  </a-assets>
-
-  <!-- Using the asset management system. -->
-  <a-sky src="#mouth"></a-sky>
-
-  <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
-  <a-sky preload="auto" src="https://cdn.glitch.global/a2739790-aec3-4e1c-9f51-141e4fb3d4fa/benmouth.JPG?v=1677706250569" webkit-playsinline></a-sky>
-  
-  </a-scene>
-  
-  <video id="grinding" width="320" height="240">
+  <a-video id="grinding" width="320" height="240">
   <source src="https://cdn.glitch.me/438d7870-48c1-44b9-aff7-0643130b18eb/chapter1.mp4?v=1678020015757" type="audio/ogg">
   <source src="https://cdn.glitch.me/438d7870-48c1-44b9-aff7-0643130b18eb/chapter1.mp4?v=1678020015757" type="audio/mpeg">
   Your browser does not support the audio element.
-  </video>
+  </a-video>
   
   <video id="romance" width="320" height="240">
   <source src="https://cdn.glitch.me/438d7870-48c1-44b9-aff7-0643130b18eb/chapter2.mp4?v=1678020410756" type="audio/ogg">
@@ -45,26 +34,28 @@
   Your browser does not support the audio element.
   </video>
 
-  <video id="rotting" width="320" height="240">
+  <a-video id="rotting" width="320" height="240">
   <source src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/chapter%205.mp4?v=1678019999866" type="audio/ogg">
   <source src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/chapter%205.mp4?v=1678019999866" type="audio/mpeg">
   Your browser does not support the audio element.
-  </video>
+  </a-video>
 
 <div class="container">
 
   <div class="btn-group">
-  <button type="button" class="btn btn-primary" id="tooth1" onclick="playPause()" on_click="show()"><img id="decay-1" src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/decay-1.png?v=1677751582382" width="100" height="100"></button>
+  <a-button type="button" class="btn btn-primary" id="tooth1" onclick="playPause()" on_click="show()"><img id="decay-1" src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/decay-1bw.png?v=1678023271211" width="100" height="100"></a-button>
 
-  <button type="button" class="btn btn-primary" id="tooth2" onclick="playPause2()"><img id="decay-2" src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/decay-2.png?v=1677751583576" width="100" height="100"></button>
+  <a-button type="button" class="btn btn-primary" id="tooth2" onclick="playPause2()"><img id="decay-2" src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/decay-2bw.png?v=1678023271854" width="100" height="100"></a-button>
 
-  <button type="button" class="btn btn-primary" id="tooth3" onclick="playPause3()"><img id="decay-3" src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/decay-3.png?v=1677751584612" width="100" height="100"></button>
+  <a-button type="button" class="btn btn-primary" id="tooth3" onclick="playPause3()"><img id="decay-3" src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/decay-3bw.png?v=1678023272478" width="100" height="100"></a-button>
 
-  <button type="button" class="btn btn-primary" id="tooth4" onclick="playPause4()"><img id="decay-4" src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/decay-4.png?v=1677751585530" width="100" height="100"></button>
+  <a-button type="button" class="btn btn-primary" id="tooth4" onclick="playPause4()"><img id="decay-4" src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/decay-4bw.png?v=1678023273558" width="100" height="100"></a-button>
 
-  <button type="button" class="btn btn-primary" id="tooth5" onclick="playPause5()"><img id="decay-5" src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/decay-5.png?v=1677751586227" width="100" height="100"></button>
+  <a-button type="button" class="btn btn-primary" id="tooth5" onclick="playPause5()"><img id="decay-5" src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/decay-5bw.png?v=1678023274109" width="100" height="100"></a-button>
   </div>
 </div>
+    
+    </a-scene>
 
 <script> 
     function playPause() {
