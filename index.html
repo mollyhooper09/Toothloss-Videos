@@ -3,10 +3,24 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
 	<title>buttongroup</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <a-scene>
+  <a-assets>
+    <img id="mouth"  src="https://cdn.glitch.global/d0f1d937-ebc2-4489-aefc-44b41a6a00aa/editedmouthbw.jpg?v=1677849137209">
+  </a-assets>
+
+  <!-- Using the asset management system. -->
+  <a-sky src="#mouth"></a-sky>
+
+  <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+  <a-sky preload="auto" src="https://cdn.glitch.global/a2739790-aec3-4e1c-9f51-141e4fb3d4fa/benmouth.JPG?v=1677706250569" webkit-playsinline></a-sky>
+  
+  </a-scene>
+  
   <video id="grinding" width="320" height="240">
   <source src="https://cdn.glitch.me/438d7870-48c1-44b9-aff7-0643130b18eb/chapter1.mp4?v=1678020015757" type="audio/ogg">
   <source src="https://cdn.glitch.me/438d7870-48c1-44b9-aff7-0643130b18eb/chapter1.mp4?v=1678020015757" type="audio/mpeg">
