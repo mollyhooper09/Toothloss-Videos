@@ -8,24 +8,54 @@
 
 #tooth1{
 	background-color: transparent;
+  border-radius:50%;
 	border: transparent;
 }
 
 #tooth2{
 	background-color: transparent;
+  border-radius:50%;
 	border: transparent;
 }
 
 #tooth3{
 	background-color: transparent;
+  border-radius:50%;
 	border: transparent;
 }
 #tooth4{
 	background-color: transparent;
+  border-radius:50%;
 	border: transparent;
 }
 
 #tooth5{
 	background-color: transparent;
+  border-radius:50%;
 	border: transparent;
+}
+
+#grinding {
+  display:block;
+  margin:auto;
+}
+
+#romance {
+  display:block;
+  margin:auto;
+}
+
+#dentistExtraction {
+  display:block;
+  margin:auto;
+}
+
+#sportingInjury {
+  display:block;
+  margin:auto;
+}
+
+#rotting {
+  display:block;
+  margin:auto;
 }

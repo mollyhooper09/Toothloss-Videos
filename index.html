@@ -40,7 +40,7 @@
 <div class="container">
 
   <div class="btn-group">
-  <button type="button" class="btn btn-primary" id="tooth1" onclick="playPause()"><img id="decay-1" src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/decay-1.png?v=1677751582382" width="100" height="100"></button>
+  <button type="button" class="btn btn-primary" id="tooth1" onclick="playPause()" reply_click="clicked_id"><img id="decay-1" src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/decay-1.png?v=1677751582382" width="100" height="100"></button>
 
   <button type="button" class="btn btn-primary" id="tooth2" onclick="playPause2()"><img id="decay-2" src="https://cdn.glitch.global/438d7870-48c1-44b9-aff7-0643130b18eb/decay-2.png?v=1677751583576" width="100" height="100"></button>
 
@@ -52,7 +52,7 @@
   </div>
 </div>
 
-<script>
+<script> 
     function playPause() {
     var video = document.getElementById('grinding');
     if (video.paused) {
