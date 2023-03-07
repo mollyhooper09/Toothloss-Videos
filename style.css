@@ -34,6 +34,17 @@
   border-radius:50%;
 	border: transparent;
 }
+#linkTooth{
+  background-color: transparent;
+	border: transparent;
+  z-index:10;
+  width:100;
+  border-radius:50;
+}
+
+#decay-6{
+  width:70px;
+}
 
 #grinding {
   display:block;
@@ -58,6 +69,19 @@
 #rotting {
   display:block;
   margin:auto;
+}
+
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.noSelect:focus {
+    outline: none !important;
 }
 
 body{
